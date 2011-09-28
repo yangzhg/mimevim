@@ -202,6 +202,8 @@ au BufEnter *.for setf fortran
 au BufEnter *.f77 setf fortran
 au BufEnter *.f90 setf fortran
 autocmd FileType python setlocal et sta sw=4 sts=4
+"autocmd BufNewFile *.py 0r ~/.vim/skeleton/py_skeleton.py
+"
 
 
 function! RemoveTrailingSpace()
