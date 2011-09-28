@@ -294,12 +294,10 @@ func! ReTag(srcdir)
     set tags+=~/.vim/tmp/tags
 endfunc
 
-map <F7> :call ReTag(expand ("%:h"))<CR>
-nnoremap <F6> :execute "cd" expand("%:h")<CR>
-nnoremap <silent> <F4> :tabprevious<CR>
-nnoremap <silent> <F3> :Grep<CR>
-"加上日期 对应F2
-nnoremap <F2> <ESC>gg:read !date<CR>
+map <F9> :call ReTag(expand ("%:h"))<CR>
+nnoremap <F8> :execute "cd" expand("%:h")<CR>
+nnoremap <silent> <F10> :Grep<CR>
+nnoremap <F11> <ESC>gg:read !date<CR>
 
 
 
