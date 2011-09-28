@@ -2,13 +2,13 @@
 " 一般设定
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 设定默认解码
-set fenc=cp936
+"set fenc=cp936
 "set fenc=utf-8
 set fencs=cp936,ucs-bom,utf-8,gb18030,big5,euc-jp,sjis,euc-kr,ucs-21e,lation1
-set enc=cp936
+"set enc=cp936
 "set enc=utf-8
-let &termencoding=&encoding
 let g:fencview_autodetect = 1
+let &termencoding=&encoding
 
 " 不要使用vi的键盘模式，而是vim自己的
 set nocompatible
@@ -433,4 +433,3 @@ nmap tl :Tlist<cr>
 " 双反斜杠\\即可打开bufexplorer
 map <leader><leader> \be
 
-:TipOfTheDay
