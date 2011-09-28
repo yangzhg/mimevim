@@ -290,6 +290,7 @@ set dictionary-=~/.vim/dic/words dictionary+=~/.vim/dic/words
 func! ReTag(srcdir)
     exec "w"
     exec "!sh ~/.vim/bin/maketagandaddtovim" a:srcdir
+    cs kill 0
     cs add ~/.vim/tmp/cscope.out
     set tags+=~/.vim/tmp/tags
 endfunc
