@@ -201,6 +201,7 @@ au BufEnter *.f setf fortran
 au BufEnter *.for setf fortran
 au BufEnter *.f77 setf fortran
 au BufEnter *.f90 setf fortran
+autocmd FileType python setlocal et sta sw=4 sts=4
 
 
 function! RemoveTrailingSpace()
