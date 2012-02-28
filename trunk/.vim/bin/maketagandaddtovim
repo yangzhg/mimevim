@@ -4,10 +4,11 @@ tagdir=`pwd`
 
 maketag()
 {
-    find ${tagdir} -name "*.cpp" -o -name "*.hpp" -o -name "*.h" -o -name "*.c"> ~/.vim/tmp/cscope.files
-    cd ~/.vim/tmp
-    cscope -bkq -i ./cscope.files
-    ctags -L ./cscope.files --extra=+q --fields=+iaS --c++-kinds=+p --verbose=yes
+    find ${tagdir} -name "*.cpp" -o -name "*.hpp" -o -name "*.h" -o -name "*.c"> $tagdir/cscope.files
+    cd $tagdir
+    cscope -bkq -i $tagdir/cscope.files
+    ctags -L $tagdir/cscope.files --extra=+q --fields=+iaS --c++-kinds=+p --verbose=yes
+    cd $curdir
 }
 
 if [ $# > 0 ]
