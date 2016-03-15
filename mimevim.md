@@ -1,0 +1,18 @@
+# Introduction #
+
+Easy going vim configure.
+
+
+# Details #
+
+  * Vim as IDE
+  * also support easygoing screen, zsh configure.
+  * rail,python support.
+  * c++,c good support.
+  * latex good support.
+
+# Install #
+  * only need execute ./install.sh
+
+# Guide #
+  * Detail manual please read ReadMe

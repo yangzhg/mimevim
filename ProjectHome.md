@@ -1,0 +1,1 @@
+Use Vim as easy-going IDE.
