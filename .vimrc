@@ -2,11 +2,11 @@
 " 一般设定
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 设定默认解码
-set fenc=cp936
-"set fenc=utf-8
-set fencs=cp936,ucs-bom,utf-8,gb18030,big5,euc-jp,sjis,euc-kr,ucs-21e,lation1
-set enc=cp936
-"set enc=utf-8
+"set fenc=cp936
+set fenc=utf-8
+set fencs=utf-8,cp936,ucs-bom,gb18030,big5,euc-jp,sjis,euc-kr,ucs-21e,lation1
+"set enc=cp936
+set enc=utf-8
 "let g:fencview_autodetect = 1
 let &termencoding=&encoding
 
@@ -119,7 +119,7 @@ set showcmd
 set guitablabel=%{tabpagenr()}.%t\ %m
 
 set autoread                " 自动重新加载外部修改内容
-"set autochdir               " 自动切换当前目录为当前文件所在的目录
+set autochdir               " 自动切换当前目录为当前文件所在的目录
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 搜索和匹配
@@ -202,9 +202,7 @@ au BufEnter *.for setf fortran
 au BufEnter *.f77 setf fortran
 au BufEnter *.f90 setf fortran
 autocmd FileType python setlocal et sta sw=4 sts=4
-"autocmd BufNewFile *.py 0r ~/.vim/skeleton/py_skeleton.py
-"
-
+autocmd BufNewFile *.py 0r ~/.vim/skeleton/py_skeleton.py
 
 function! RemoveTrailingSpace()
     if $VIM_HATE_SPACE_ERRORS != '0' &&
@@ -224,10 +222,10 @@ set formatoptions=tcrqn
 set autoindent
 
 " 为C程序提供自动缩进
-"set smartindent
+set smartindent
 
 " 使用C样式的缩进
-"set cindent
+set cindent
 
 " 制表符为4
 set tabstop=4
